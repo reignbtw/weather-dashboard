@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Piercen's Weather Dashboard</title>
+</head>
+<body>
+    <header>Weather Dashboard</header>
+    <main>
+        <form id="form-main" action="#">
+            <h3>Search for a City:</h3>
+            <input id="enter-city" type="text" placeholder="Enter City" />
+            <div class="form-inner">
+                <button id="submit" type="submit">Search</button>
+                <button id="reset" type="button">Reset</button>
+                <button id="clear-history" type="button">Clear History</button>
+            </div>
+            <hr>
+            <div id="history-search"></div>
+        </form>
+        <div id="data">
+            <div id="current-temp">
+                <button id="switch-metric">Switch All Metrics</button>
+                <div id="city-weather">
+                    <h3 id="city-name"></h3>
+                    <img id="weather-icon"/>
+                </div>
+                <p> Temperature: <span id="current-weather"></span></p>
+                <p>Feels Like: <span id="feels-like"></span></p>
+                <p>Wind: <span id="wind"></span></p>
+                <p>Humidity: <span id="humid"></span></p>
+                <p>UV Index: <span id="uv-index"></span></p>
+            </div>
+            <div id="five-day-forecast">
+                <h4>5 Day Forecast</h4>
+                <div id="forecast-container">
+                    <div class="daily-forecast" id="day-1">
+                        <div id="day-1-temp">
+                            <p id="forecast-date-1" class="forecast-date"></p>
+                            <img src="" aly="" id="weather-icon-day-1">
+                            <p>Temp: <span class="forecast-temp" id="day-1-weather"></span></p>
+                            <p>Wind: <span class="forecast-wind" id="day-1-wind"></span></p>
+                            <p>Humidity: <span id="day-1-humidity"></span></p>
+                        </div>
+                    </div>
+                    <div class="daily-forecast" id="day-2">
+                        <div id="day-2-temp">
+                            <p id="forecast-date-2" class="forecast-date"></p>
+                            <img src="" aly="" id="weather-icon-day-2">
+                            <p>Temp: <span class="forecast-temp" id="day-2-weather"></span></p>
+                            <p>Wind: <span class="forecast-wind" id="day-2-wind"></span></p>
+                            <p>Humidity: <span id="day-2-humidity"></span></p>
+                        </div>
+                    </div>
+                    <div class="daily-forecast" id="day-3">
+                        <div id="day-3-temp">
+                            <p id="forecast-date-3" class="forecast-date"></p>
+                            <img src="" aly="" id="weather-icon-day-3">
+                            <p>Temp: <span class="forecast-temp" id="day-3-weather"></span></p>
+                            <p>Wind: <span class="forecast-wind" id="day-3-wind"></span></p>
+                            <p>Humidity: <span id="day-3-humidity"></span></p>
+                        </div>
+                    </div>
+                    <div class="daily-forecast" id="day-4">
+                        <div id="day-4-temp">
+                            <p id="forecast-date-4" class="forecast-date"></p>
+                            <img src="" aly="" id="weather-icon-day-4">
+                            <p>Temp: <span class="forecast-temp" id="day-4-weather"></span></p>
+                            <p>Wind: <span class="forecast-wind" id="day-4-wind"></span></p>
+                            <p>Humidity: <span id="day-4-humidity"></span></p>
+                        </div>
+                    </div>
+                    <div class="daily-forecast" id="day-5">
+                        <div id="day-5-temp">
+                            <p id="forecast-date-5" class="forecast-date"></p>
+                            <img src="" aly="" id="weather-icon-day-5">
+                            <p>Temp: <span class="forecast-temp" id="day-5-weather"></span></p>
+                            <p>Wind: <span class="forecast-wind" id="day-5-wind"></span></p>
+                            <p>Humidity: <span id="day-5-humidity"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
